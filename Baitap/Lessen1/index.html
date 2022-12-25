@@ -1,22 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trần Anh Kiên</title>
-</head>
-<body style="background-color: aliceblue;">
-	<div class="menu">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
-					<h3 class="py-3">About <span>Me</span></h3>
-				</div>
-			</div>
-		</div>
-	</div>
 
+<head>
+	<meta charset="UTF-8">
+	<title>Trần Anh Kiên</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,700">
+</head>
+
+<style>
+	* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.name p:nth-child(2) {
+    color: #575757d1;
+    font-family:  'roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    letter-spacing: 0.6px;
+}
+
+body {background-color: #0a0a0a; margin:0; padding:0;}
+
+.avatarBox img {
+	box-shadow: 0px 0px 4px 1px #373141ab;
+}
+
+.menu h3 {
+	color: #76cc9c;
+}
+
+.name {
+	cursor: default;
+}
+
+.name .s {
+	text-shadow: 0.6px 0.6px 2px #3cb3716e;
+}
+
+.name p:first-child {
+	font-weight: 700;
+	color: #585858;
+	font-size: 24pt;
+	padding-bottom: 0px;
+	margin-bottom:  0px;
+	line-height: 1;
+	margin-top: 6px;
+	transition: 0.4s;
+	box-sizing: border-box;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.name p:first-child:after {
+	content: '';
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 4px;
+	background-color: orange;
+	transition: 0.2s;
+	margin-left: 10px;
+	transform-origin: 50% 50%;
+	transform: scaleY(0);
+}
+
+.name p:first-child:hover:after {
+	transform: scaleY(1);
+}
+
+.name p:first-child span {
+	font-weight: 300;
+}
+
+.s {
+	display: inline-block;
+	margin: 0 0 0 12px;
+	transform: scaleX(0);
+	transform-origin: 0% 50%;
+	transition: 0.3s;
+}
+
+.s span {
+	font-size: 18px;
+}
+
+.name p:nth-child(3) {
+	text-shadow: 0.2px 0.2px 0.4px #44227bd1;
+}
+
+.name p:nth-child(3) span{
+	font-size: 18px;
+	margin-right: 4px;
+}
+
+.menu h3 span {
+	color: #e4664f;
+}
+
+.menu {
+	background-color: #f3f3f3;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 100;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boldd {
+	font-weight: 600;
+	color: #5a5a5af2;
+}
+
+.menuMore {
+	
+}
+
+.b {
+	text-shadow: 0px 0px 0.2px #44227bd1;
+	font-size: 12pt;
+}
+
+.profile {
+	background-color: rgb(236, 223, 223);
+	box-shadow: 0 4px 8px 0 rgba(163, 113, 113, 0.2);
+	border-radius: 10px;
+}
+
+.sayHi {
+	background-color: #52f152;
+	display: inline-block;
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	padding: 5px 7px;
+	line-height: 1.3;
+	font-size: 17px;
+	text-transform:  uppercase;
+	color: #fff;
+	border-radius: 10px;
+	position: relative;
+}
+
+.sayHi:after {
+	content: '';
+	width: 0;
+	height: 0;
+	top:  100%;
+	left: 10px;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 0 0 8px 8px;
+	border-left-color: #52f152;
+}
+
+.social span {
+	color: #f1eeee;
+	display: inline-block;
+	font-size: 24px;
+	margin-bottom: 14px;
+	line-height: 1.1;
+	transition: 0.4s;
+}
+
+.social span:hover {
+	color: #373737;
+}
+
+.social span {
+	padding-top: 16px;
+	list-style-type: none;
+}
+
+.detailInfo {
+	color: #373737;
+}
+
+.color-contact {
+  background-color: #78dc35 !important;
+  border-radius: 10px;
+}
+
+a.color-contact:hover, a.color-contact:focus,
+button.color-contact:hover,
+button.color-contact:focus {
+  background-color: #78dc35 !important;
+}
+
+</style>
+
+<body>
 	<div class="container" style="margin-top: 116px;">
 		<div class="row">
 			<div class="col-11 mx-auto profile">
@@ -24,37 +206,28 @@
 
 					<div class="row">
 						<div class="avatarBox col-12 col-lg-5">
-							<img src="img/3.png" class="img-fluid">
+							<img src="src/img/kien242.jpeg" class="img-fluid">
 						</div>
 
 						<div class="infoBox col-12 col-lg-6 mt-2 mt-lg-0">
 							<p class="sayHi">Hello</p>
 
 							<div class="name">
-								<p><span>I'm</span> Lmint</p>
-								<p class="s">Verified
-									<span class="ion-ios-checkmark-outline"></span>
-								</p>
-								<p><span class="ion-android-globe"></span> AnonyViet.com</p>
+								<p><span>I'm</span> Trần Kiên</p>
 							</div>
-							<hr>
 
 							<div class="detailInfo">
 								<div class="row my-2">
 									<div class="col-lg-4 col-12 boldd">Tên</div>
-									<div class="col-lg-8 col-12 b">Lmint</div>
+									<div class="col-lg-8 col-12 b">Trần Anh Kiên</div>
 								</div>
 								<div class="row my-2">
-									<div class="col-lg-4 col-12 boldd">Công ty</div>
-									<div class="col-lg-8 col-12 b">AnonyViet Site</div>
-								</div>
-								<div class="row my-2">
-									<div class="col-lg-4 col-12 boldd">Jobs</div>
-									<div class="col-lg-8 col-12 b">Web Developer</div>
+									<div class="col-lg-4 col-12 boldd">Công Việc</div>
+									<div class="col-lg-8 col-12 b">Thiết kế bàn phím, Quản lý kho</div>
 								</div>
 								<div class="row">
 									<div class="col-lg-4 col-12 boldd">Tuổi</div>
-									<div class="col-lg-8 col-12 b">19 Years Old</div>
+									<div class="col-lg-8 col-12 b">24</div>
 								</div>
 
 							</div>
@@ -63,17 +236,20 @@
 
 				</div>
 			</div>
-			<div class="col-11 mx-auto bg-danger contact text-center">
-				<div class="social col-12">
+			<div class="col-11 mx-auto color-contact contact text-center">
+				<div class=" social  col-12">
 					<!-- Facebook -->
-					<a href="https://facebook.com/minhthong.lu.58" target="_blank">
-						<span class="ion-social-facebook mr-4 mr-lg-5"></span>
+					<a href="https://www.facebook.com/trankien242tb" target="_blank">
+						<span class="fa fa-facebook-f mr-4 mr-lg-5"></span>
 					</a>
-					<span class="ion-social-instagram-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-whatsapp-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-skype-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-twitter-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-linkedin-outline ml-lg-3"></span>
+					<!-- Github -->
+					<a href="https://github.com/kien242" target="_blank">
+						<span class="fa fa-github mr-4 mr-lg-5 ml-lg-3"></span>
+					</a>
+					<!-- Instagram-->
+					<a href="https://  " target="_blank" >
+					    <span class="fa fa-instagram"> </span>
+				    </a>
 				</div>
 			</div>
 		</div>
