@@ -1,0 +1,16 @@
+div {
+    border: 1px dashed: black;
+}
+
+.product1 {
+    border: 2px solid rgb(25, 138, 59);
+}
+.product2 {
+    border: 2px solid saddlebrown;
+}
+.product3 {
+    border: 2px solid rgb(146, 145, 144);
+}
+#card {
+    border: 12px solid snow;
+}
