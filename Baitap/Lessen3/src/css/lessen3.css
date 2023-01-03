@@ -1,0 +1,22 @@
+.body_box_total{
+    box-sizing: border-box;
+    width: 1440px;
+    height: 1024px;
+    background-color: black;
+    border-radius: 77px;
+}
+.img_box{
+    position:fixed; 
+    left:-26px; 
+    top: -23px;
+    margin: 30px;
+    width: 544px;
+    height: 759px;
+    display: inline-block;
+}
+.img_box__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 77px;
+}
