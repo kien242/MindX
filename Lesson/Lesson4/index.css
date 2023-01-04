@@ -1,0 +1,25 @@
+.box{
+    width: 100px;
+    height: 400px;
+    background-color: red;
+}
+
+.box-sizing{
+    box-sizing: border-box;
+    width: 100px;
+    height: 400px;
+    background-color: green;
+}
+
+.parent {
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    position: relative;
+}
+
+.chirent{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
