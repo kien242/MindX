@@ -2,9 +2,12 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     background: #DD3543;
+    z-index: 999;
+    left: 0;
+    right: 0;
   }
   nav {
     display: flex;
