@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+      font-family: "Poppins", sans-serif;
+      max-width: 1440px;
+      margin: 0 auto;
+      color: #8a8fa3
+    }
+    
+    header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: #DD3543;
+  }
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: align-items .2s;
+  }
+  .logo {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 20px 30px;
+    background: #F35B66;
+    color: #fff;
+    margin: 50px 0 0 50px;
+    transition: all .2s;
+  }
+  ul {
+    display: flex;
+    margin: 50px 50px 0 0;
+    padding: 0;
+    transition: margin .2s;
+  }
+  li:not(:last-child) {
+    margin-right: 20px;
+  }
+  li a {
+    display: block;
+    padding: 10px 20px;
+  }

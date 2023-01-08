@@ -1,6 +1,6 @@
 .button {
     background-color: #4CAF50;
-    border: 2px solid black; /* Green */
+    border: 2px solid black;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -12,6 +12,33 @@
     border-radius: 12px;
   }
 
+.button1 {
+  background-color: #4caf50; 
+  color: black; 
+}
+
+.button1:hover {
+  background-color: rgb(41, 132, 192);
+  color: white;
+}
+
 .button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */ 
+
+.button2:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.button3 {background-color: #f44336;} /* Red */
+
+.button3:hover{
+  background-color: #453396;
+  color: azure;
+}
+
 .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+
+.button4:hover{
+  background-color: royalblue;
+  color: azure;
+}
