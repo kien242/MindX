@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+.container{
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-gap: 10px;
+}
+
+/* Begin of Header */
+
+header-container{
+    background-color: #fff;
+    grid-area: header ;
+    display: grid;
+}
+
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.nav-logo{
+    text-align: center;
+}
+
+.nav-link{
+}
+
+.nav-link ul{
+    text-align: center;
+}
+
+.nav-link li{
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+/* End of header */
+
+
+
+/*  Begin of main
+    - Home
+    - About
+    - Service
+    - Work
+    - Blog
+    - Contact
+ */
+.main-container{
+    background-color: #fff;
+    grid-area: main;
+    border: 5px solid gray;
+    display: grid;
+}
+ /*  End of main */
+
+
+
+ /* Begin of footer */
+.footer-container{
+    border: 5px dashed darkblue;
+    grid-area: footer;
+}
+ /* End of footer */
