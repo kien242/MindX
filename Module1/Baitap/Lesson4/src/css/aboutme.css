@@ -1,19 +1,25 @@
 /* About me */
 #about{
-
+  display: flex;
+  justify-content: center;
 }
-#about .about-total{
+#about .about-container{
+  display: flex;
+  justify-content: center;
+}
+
+.about-total{
   margin-bottom: 36px;
 }
 
-#about .about-total h2{
+.about-total h2{
   font-size: 45px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 24px;
 }
 
-#about .about-total p{
+.about-total p{
   font-size: 16px;
   color: #8a8fa3;
   line-height: 28px;
@@ -22,33 +28,35 @@
   margin: 0 auto;
 }
 
-#about .about-content{
+.about-content{
   display: flex;
-  justify-content: space-between;
-  margin-left: -1rem;
-  flex-flow: row wrap;
+  margin: 10%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#about .about-content .about-header{
-  flex: 1 0;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+.about-content .about-header{
+  text-align: left;
+  width: 50%;
 }
 
-#about .about-content .about-header ul{
+.about-content .about-header h5{
+  font-size: 18px;
+}
+
+.about-content .about-header ul{
     justify-content: space-around;
     flex-wrap: wrap-reverse;
   }
 
-#about .about-content .about-skill{
+.about-content .about-skill{
   flex: 1 0;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
   padding: 1rem;
 }
 
-#about .about-content .about-skill .about-skill-item {
-justify-content: space-between;
+.about-content .about-skill .about-skill-item {
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: space-between;
 }
 

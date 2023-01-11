@@ -5,16 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/css/desktop/style.css">
+    <!-- Google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- Font awesome for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awsome icon free kien242 -->
+    <script src="https://kit.fontawesome.com/687d0d1a46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/style.css">       <!-- init css-->
+    <link rel="stylesheet" href="./src/css/desktop_style.css">  <!-- desktop css-->
+    <link rel="stylesheet" href="./src/css/mobile_style.css">  
 </head>
 <body>
-    <div class="container">
+    <div class="web-container">
+        <!-- Begin of Header -->
         <header class="header-container">
             <nav class="nav-container">
                 <div class="nav-logo">   <!-- Icon-->
                     <h1>
                         <a class="navi-logo" href="index.html">
-                            <img src="assets/images/logo.png" alt="Logo">
+                            <img src="https://preview.uideck.com/items/unfold/assets/images/logo.png" alt="Logo">
                         </a>
                     </h1>
                 </div>  <!-- end of Icon-->
@@ -30,95 +41,124 @@
                     </ul>
                 </div>  <!-- end of slidebar-->
             </nav>
-        </header>
-
-        <div class="main-container">
 
             <!-- Home -->
-            <section class="main-home-container">
-                <div>
-                    <h4>Hello, I'm</h4>
-                    <h1>Peter Parker</h1>
-                    <p>A Freelancer UI Designer &amp; Web Developer</p>
-                    <a href="#work">View my Work</a>
-                </div>
-
-                <div>
-                    <img src="./src/img/baner.png" alt="hero">
-                </div>
-            </section>
+            <div class="main-home-container">
+                    <div>
+                        <h4>Hello, I'm</h4>
+                        <h1>Peter Parker</h1>
+                        <p>A Freelancer UI Designer &amp; Web Developer</p>
+                        <a class="work-button" href="#work">View my Work</a>
+                    </div>
+            
+                    <div>
+                        <img src="https://preview.uideck.com/items/unfold/assets/images/banner/hero.png" alt="hero">
+                    </div>
+            </div>
             <!-- end of home -->
+        </header>
+        <!-- End of header -->
 
-            <!-- About -->
-            <section id="about-container">
-                <div>
-                    <h2>About me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab, natus necessitatibus possimus veniam quisquam odio deserunt expedita temporibus porro in modi reprehenderit, maiores delectus officiis, error sequi ipsum nihil!</p>
+        <!-- Begin of content -->
+        <div class="content-container">
+            <!-- Begin of About -->
+            <div id="about-container">
+                <div class="about-me">
+                    <h2 class="title">About Me</h2>
+                    <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
                 </div>
 
-                <div class="about-content">
+                <div class="about-skill-total">
+                    <div class="about-skill">
+                        <h5 class="about-title">Hi There! I'm Peter Parker</h5>
+                        <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <ul class="contact-infomation">
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p><span>Date of birth:</span> 8 June 1995</p>
+                                </div>
+                            </li>
 
-                    <div class="about-header"> <!-- header-->
-                        <h5>Hi There! I'm Pete Parker aka spider man</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <ul>
-                            <li>Date of birth: 8 June 1995</li>
-                            <li>Email: parker@mysite.com</li>
-                            <li>Phone: +1-202-555-0138</li>
-                            <li>Location: 4373, El Centro, CA</li>
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p><span>Phone:</span> +1-202-555-0138</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p><span>Email:</span> parker@mysite.com</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p><span>Location:</span>4373, El Centro, CA</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-    
-                    <div class="about-skill">
-                        <div class="about-skill-item">
-                            <div> <!-- HTML-->
-                                <div> <!--name-->
-                                    <h6> HTML</h6>
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-location">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-item-header">
+                                    <h6 class="skill-title">HTML</h6>
                                 </div>
-    
-                                <div> <!--skill bar-->
-                                </div>
-                            </div>
-    
-                            <div> <!-- CSS-->
-                                <div> <!--name-->
-                                    <h6> CSS</h6>
-                                </div>
-    
-                                <div> <!--skill bar-->
+                                <div class="skill-bar-item-scroll">
+                                    <div class="item-scroll-background" style="width: 80%;"></div>
                                 </div>
                             </div>
-    
-                            <div> <!-- Photoshop-->
-                                <div> <!--name-->
-                                    <h6> Photoshop</h6>
+
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-item-header">
+                                    <h6 class="skill-title">CSS</h6>
                                 </div>
-    
-                                <div> <!--skill bar-->
+                                <div class="skill-bar-item-scroll">
+                                    <div class="item-scroll-background" style="width: 60%;"></div>
                                 </div>
                             </div>
-    
-                            <div> <!-- Sketch-->
-                                <div> <!--name-->
-                                    <h6>Sketch</h6>
+
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-item-header">
+                                    <h6 class="skill-title">Photoshop</h6>
                                 </div>
-    
-                                <div> <!--skill bar-->
+                                <div class="skill-bar-item-scroll">
+                                    <div class="item-scroll-background" style="width: 50%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-item-header">
+                                    <h6 class="skill-title">Sketch</h6>
+                                </div>
+                                <div class="skill-bar-item-scroll">
+                                    <div class="item-scroll-background" style="width: 90%;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <!-- End of About -->
-
-            
         </div>
+        <!-- End of Content -->
+
 
         <footer class="footer-container">
-            <h1> trarn anh kien</h1>
+
         </footer>
     </div>
 </body>

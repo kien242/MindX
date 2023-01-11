@@ -1,3 +1,25 @@
 #home{
     padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home .home-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home .home-container .overview h4{
+    color: #754ef9;
+    font-size: 30px;
+}
+
+#home .home-container .overview h1{
+    color: #32333c;
+    font-size: 60px;
+}
+
+#home .home-container .overview p {
+    font-size: 16px;
 }
