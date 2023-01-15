@@ -60,36 +60,132 @@
         </nav>
     </header>
 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("hero-hide-service");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" avtive-button", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " avtive-button";
+        }
+    </script>
+
+
     <!-- Section hero -->
     <section id="hero" class="container hero">
-        <div class="hero-info">
-            <div class="hero-info-services">
-                <button class="services-button avtive-button">Hosting</button>
-                <button class="services-button ">Domain</button>
-                <button class="services-button ">SEO</button>
-                <button class="services-button ">Email</button>
-                <!-- <p class="active hosting">Hosting</p> -->
-                <!-- <p>Domain</p>
-                <p>SEO</p>
-                <p>Email</p> -->
-            </div>
-            <h1 class="hero-title">Premium Web Hosting for Your Website</h1>
-            <p class="hero-description">
-                Blazing fast web hosting for individuals and businesses of all sizes
-                backed by 24x7x365 Support.
-            </p>
-            <div class="hero-cta">
-                <button class="button button-primary">Create an account</button>
-                <button class="button button-secondary">Choose your plan</button>
-            </div>
-        </div>
 
-        <div class="hero-image">
-            <img src="./src/img/hero-image.png" alt="hero image" />
-            <div class="hero-triangle-1 up-down"></div>
-            <div class="hero-triangle-2 up-down"></div>
-            <div class="hero-triangle-3 up-down"></div>
+        <div class="hero-services">
+            <button class="services-button demo" onclick="currentDiv(1)">Hosting</button>
+            <button class="services-button demo" onclick="currentDiv(2)">Domain</button>
+            <button class="services-button demo" onclick="currentDiv(3)">SEO</button>
+            <button class="services-button demo" onclick="currentDiv(4)">Email</button>
         </div>
+        <div class="hero-hide-service"> <!--Hosting-->
+            <div class="hero-banner-hosting">
+                <div class="hero-banner-infomation">
+                    <h1 class="hero-title">Premium Web Hosting for Your Website</h1>
+                    <p class="hero-description">
+                        Blazing fast web hosting for individuals and businesses of all sizes
+                        backed by 24x7x365 Support.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="select-button button-primary">Create an account</button>
+                        <button class="select-button button-secondary">Choose your plan</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="./src/img/hero-image.png" alt="hero image" />
+                    <div class="hero-triangle-1 up-down"></div>
+                    <div class="hero-triangle-2 up-down"></div>
+                    <div class="hero-triangle-3 up-down"></div>
+                </div>
+            </div>
+        </div> <!--End of Hosting-->
+
+        <div class="hero-hide-service"> <!--Domain-->
+            <div class="hero-banner-hosting">
+                <div class="hero-banner-infomation">
+                    <h1 class="hero-title">Premium Domain for Your Website</h1>
+                    <p class="hero-description">
+                        Blazing fast web hosting for individuals and businesses of all sizes
+                        backed by 24x7x365 Support.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="select-button button-primary">Create an account</button>
+                        <button class="select-button button-secondary">Choose your plan</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="./src/img/hero-image.png" alt="hero image" />
+                    <div class="hero-triangle-1 up-down"></div>
+                    <div class="hero-triangle-2 up-down"></div>
+                    <div class="hero-triangle-3 up-down"></div>
+                </div>
+            </div>
+        </div> <!--End of Domain-->
+
+        <div class="hero-hide-service"> <!--SEO-->
+            <div class="hero-banner-hosting">
+                <div class="hero-banner-infomation">
+                    <h1 class="hero-title">Premium SEO for Your Website</h1>
+                    <p class="hero-description">
+                        Blazing fast web hosting for individuals and businesses of all sizes
+                        backed by 24x7x365 Support.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="select-button button-primary">Create an account</button>
+                        <button class="select-button button-secondary">Choose your plan</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="./src/img/hero-image.png" alt="hero image" />
+                    <div class="hero-triangle-1 up-down"></div>
+                    <div class="hero-triangle-2 up-down"></div>
+                    <div class="hero-triangle-3 up-down"></div>
+                </div>
+            </div>
+        </div> <!--End of SEO-->
+
+        <div class="hero-hide-service"> <!--Emal-->
+            <div class="hero-banner-hosting">
+                <div class="hero-banner-infomation">
+                    <h1 class="hero-title">Premium Web Mail for Your Website</h1>
+                    <p class="hero-description">
+                        Blazing fast web hosting for individuals and businesses of all sizes
+                        backed by 24x7x365 Support.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="select-button button-primary">Create an account</button>
+                        <button class="select-button button-secondary">Choose your plan</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="./src/img/hero-image.png" alt="hero image" />
+                    <div class="hero-triangle-1 up-down"></div>
+                    <div class="hero-triangle-2 up-down"></div>
+                    <div class="hero-triangle-3 up-down"></div>
+                </div>
+            </div>
+        </div> <!--End of Email-->
     </section>
     <!-- End section hero -->
 
