@@ -103,51 +103,29 @@ body {
 .hero {
   padding-top: 72px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   gap: 60px;
   margin-bottom: 78px;
 }
 
-.hero .hero-info {
-  width: 50%;
+.hero-hide-service{
+  display: none;
 }
 
-.hero-info-services {
+.hero-show-service{
+  
+}
+
+.hero-services{
+  width: fit-content;
   margin-bottom: 26px;
   display: inline-flex;
   padding-bottom: 4px;
   border-bottom: 2px solid var(--gray-color-3);
 }
 
-.hero-info-services p {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 22px;
-  color: var(--gray-color-2);
-}
-
-.hero-info-services p.active {
-  color: var(--primary-color);
-  padding-bottom: 4px;
-  position: relative;
-}
-
-.hero-info-services p.active::after {
-  position: absolute;
-  content: "";
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: var(--primary-color);
-}
-
-.hero-info-services p:not(:last-child) {
-  margin-right: 24px;
-}
-
-.hero-info-services .services-button {
+.hero-services .services-button {
   background-color: rgba(128, 128, 128, 0);
   color: var(--gray-color-2);
   width: fit-content;
@@ -156,14 +134,15 @@ body {
   font-weight: 600;
   line-height: 22px;
   border: none;
+  cursor: pointer;
   margin-right: 24px;
 }
-.hero-info-services .avtive-button {
+.hero-services .avtive-button {
   color: var(--primary-color);
   position: relative;
 }
 
-.hero-info-services .avtive-button::after {
+.hero-services .avtive-button::after {
   position: absolute;
   content: "";
   bottom: -5px;
@@ -173,6 +152,9 @@ body {
   background: var(--primary-color);
 }
 
+.hero-banner-hosting{
+  display: flex;
+}
 .hero-title {
   font-weight: 700;
   font-size: 64px;
@@ -194,7 +176,7 @@ body {
   gap: 24px;
   align-items: center;
 }
-.button {
+.select-button {
   padding: 12px;
   border: none;
   outline: none;
@@ -204,7 +186,7 @@ body {
   transition: all 0.3s;
 }
 
-.button:hover {
+.select-button:hover {
   transform: scale(1.1);
 }
 
@@ -223,6 +205,7 @@ body {
 .hero .hero-image {
   width: 50%;
   position: relative;
+  top: -80px;
 }
 .hero .hero-image img {
   width: 522px;
@@ -285,6 +268,10 @@ body {
     transform: translate(1px, 22px);
   }
 }
+
+
+
+
 
 /* Section partner */
 .partner {
