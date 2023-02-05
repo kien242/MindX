@@ -15,9 +15,11 @@ function kiemtranhapngu(){
         console.log(`Bạn là nữ`)
         alert(`Bạn là nữ, sẽ không có lệnh gọi khám tuyển, tuy nhiên bạn vẫn có thể tham gia và Quân đội bằng cách viết đơn xin khám tuyển nghĩa vụ quân sự tự nguyện`)
     } else if(document.getElementById("male").checked && tuoi <18){
-        console.log(`Bạn chưa đủ tuổi để được gọi khám tuyển NVQS`)
+        console.log(`Bạn chưa đủ tuổi để được gọi khám tuyển NVQS`);
+        alert(message4);
     } else if(document.getElementById("male").checked && tuoi > 27){
         console.log(`Bạn đã quá tuổi để được gọi khám tuyển NVQS`)
+        alert(message5)
     }
 
 }
