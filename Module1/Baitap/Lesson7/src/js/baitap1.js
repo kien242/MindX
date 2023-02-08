@@ -18,8 +18,8 @@ function kiemtranhapngu(){
         console.log(`Bạn chưa đủ tuổi để được gọi khám tuyển NVQS`);
         alert(message4);
     } else if(document.getElementById("male").checked && tuoi > 27){
-        console.log(`Bạn đã quá tuổi để được gọi khám tuyển NVQS`)
-        alert(message5)
+        console.log(`Bạn đã quá tuổi để được gọi ${name} khám tuyển NVQS`)
+        alert(`Bạn đã quá tuổi để được gọi ${name} khám tuyển NVQS`)
     }
 
 }

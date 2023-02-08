@@ -3,9 +3,8 @@ function tinhthue(){
     let y = tienthue(x);
     let tiensauthue= x - y;
     const message1 = `Xin chào\nTiền thuế bạn nộp vào ngân sách giúp xây dựng Đất nước giàu mạnh. \nĐừng trốn thuế. \nTiền thuế TNCN bạn phải nộp vào ngân sách nhà nước là: `;
-    const message2 = `\nSố tiền bạn có sau khi trừ thuế là: `
-    let message = message1 + y + message2 + tiensauthue;         
-    alert(message)
+    const message2 = `\nSố tiền bạn có sau khi trừ thuế là: `     
+    alert(message1 + y + message2 + tiensauthue)
     // document.getElementById("tienthuephainop").innerHTML = y;
 }
 function tienthue(luong) {
