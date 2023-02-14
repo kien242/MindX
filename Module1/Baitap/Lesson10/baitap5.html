@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/css-sass/css/baitap5.css">
 </head>
+
 <body>
     <div id="container">
         <div class="container">
@@ -27,25 +29,36 @@
                     </div>
                 </div>
                 <div id="calculation">
-                    <label class="container">One
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="container">Two
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="container">Three
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="container">Four
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                      </label>
+
+                        <div class="plus-minus generality">
+                            <label class="container-operator">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>Cộng
+                            </label>
+                            <label class="container-operator">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>Trừ
+                            </label>
+                        </div>
+
+                        <div class="multiply-division generality">
+                            <label class="container-operator">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>Nhân
+                            </label>
+                            <label class="container-operator">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>Chia
+                            </label>
+                        </div>
+
+                        <div>
+                            <button id="buttonToggle" onclick="myFunction()">Tính đi</button>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

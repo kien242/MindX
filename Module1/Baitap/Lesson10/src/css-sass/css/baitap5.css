@@ -20,7 +20,6 @@
   display: flex;
 }
 .container #input .inputContainer {
-  border: 2px solid blue;
   width: 70%;
 }
 .container #input .inputContainer .input {
@@ -39,7 +38,25 @@
 }
 .container #input #calculation {
   width: 30%;
-  border: 2px solid orangered;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container #input #calculation .generality {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container #input #calculation .container-operator {
+  width: 50%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*# sourceMappingURL=baitap5.css.map */
