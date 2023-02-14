@@ -1,0 +1,45 @@
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0%;
+}
+
+.container {
+  border: 2px solid red;
+  background-color: rgb(212, 207, 207);
+  border-radius: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.container #input {
+  width: 80%;
+  display: flex;
+}
+.container #input .inputContainer {
+  border: 2px solid blue;
+  width: 70%;
+}
+.container #input .inputContainer .input {
+  display: flex;
+  align-items: center;
+}
+.container #input .inputContainer .input p {
+  width: 25%;
+  font-size: larger;
+}
+.container #input .inputContainer .input .inputCell {
+  height: 40px;
+  width: 70%;
+  border-radius: 3px;
+  border: none;
+}
+.container #input #calculation {
+  width: 30%;
+  border: 2px solid orangered;
+}
+
+/*# sourceMappingURL=baitap5.css.map */
