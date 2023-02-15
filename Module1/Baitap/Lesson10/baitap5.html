@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/css-sass/css/baitap5.css">
+    <script src="./src/js/baitap5.js"></script>
 </head>
 
 <body>
@@ -15,47 +16,51 @@
             <h1>Caculator Simple</h1>
             <div id="input">
                 <div class="inputContainer">
-                    <div id="numberOne" class="input">
+                    <div class="input">
                         <p>Nhập số thứ nhất:</p>
-                        <input type="number" name="" id="" class="inputCell">
+                        <input type="number" name="" id="numberOne" class="inputCell">
                     </div>
-                    <div id="numberTwo" class="input">
+                    <div class="input">
                         <p>Nhập số thứ hai:</p>
-                        <input type="number" name="" id="" class="inputCell">
+                        <input type="number" name="" id="numberTwo" class="inputCell">
                     </div>
-                    <div id="output" class="input">
+                    <div class="input">
                         <p>Kêt quả</p>
-                        <input type="number" name="" id="" class="inputCell">
+                        <input type="number" name="" id="output" class="inputCell" disabled placeholder="">
                     </div>
                 </div>
+
                 <div id="calculation">
 
-                        <div class="plus-minus generality">
-                            <label class="container-operator">
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>Cộng
-                            </label>
-                            <label class="container-operator">
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>Trừ
-                            </label>
-                        </div>
+                    <div class="plus-minus generality">
+                        <label class="container-operator">
+                            <input type="radio" name="radio" id="plus">
+                            <span class="checkmark"></span>Cộng
+                        </label>
+                        <label class="container-operator">
+                            <input type="radio" name="radio" id="minus">
+                            <span class="checkmark"></span>Trừ
+                        </label>
+                    </div>
 
-                        <div class="multiply-division generality">
-                            <label class="container-operator">
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>Nhân
-                            </label>
-                            <label class="container-operator">
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>Chia
-                            </label>
-                        </div>
+                    <div class="multiply-division generality">
+                        <label class="container-operator">
+                            <input type="radio" name="radio" id="multiply">
+                            <span class="checkmark"></span>Nhân
+                        </label>
+                        <label class="container-operator">
+                            <input type="radio" name="radio" id="divider">
+                            <span class="checkmark"></span>Chia
+                        </label>
+                    </div>
 
-                        <div>
-                            <button id="buttonToggle" onclick="myFunction()">Tính đi</button>
-                        </div>
+                    <button id="buttonClick" onclick="caculator()">Tính đi</button>
                 </div>
+            </div>
+
+            <div id="warning">
+                <p id="warningNumber"></p>
+                <p id="warningOperator"></p>
             </div>
         </div>
     </div>

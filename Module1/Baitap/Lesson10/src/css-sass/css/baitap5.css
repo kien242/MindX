@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 .container #input #calculation .generality {
   width: 100%;
@@ -49,7 +50,8 @@
 }
 .container #input #calculation .container-operator {
   width: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   cursor: pointer;
   font-size: 22px;
@@ -57,6 +59,27 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.container #input #calculation #buttonClick {
+  width: 80%;
+  background-color: #4caf50; /* Green */
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.container #input #calculation #buttonClick:hover {
+  background-color: #ffffff; /* Green */
+  color: #4caf50;
+}
+.container #warning {
+  width: 80%;
+  border: #4caf50 5px solid;
 }
 
 /*# sourceMappingURL=baitap5.css.map */
